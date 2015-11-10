@@ -9,15 +9,19 @@ public enum Caractere {
     UN(1, "   ", "  |", "  |"),
     DEUX(2, " _ ", " _|", "|_ "),
     TROIS(3, " _ ", " _|", " _|"),
-    QUATRE(4, "   ", "|_|", "  |");
-
+    QUATRE(4, "   ", "|_|", "  |"),
+    CINQ(5, " _ ", "|_ ", " _|"),
+    SIX(6, " _ ", "|_ ", "|_|"),
+    SEPT(7, " _ ", "  |", "  |"),
+    HUIT(8, " _ ", "|_|", "|_|"),
+    NEUF(9, " _ ", "|_|", "  |");
 
     private final int valeur;
     private final String haut;
     private final String milieu;
     private final String bas;
 
-    private Caractere(int valeur, String haut, String milieu, String bas) {
+    Caractere(int valeur, String haut, String milieu, String bas) {
         this.haut = haut;
         this.milieu = milieu;
         this.bas = bas;

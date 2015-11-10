@@ -1,19 +1,26 @@
 import bank.LigneOCR;
+import org.junit.Before;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
 
 /**
- * Created by eptwalabha on 09/11/15.
+ * Created by coding-dojo-coolworking on 09/11/15.
  */
 public class LigneOCRTest {
 
 
+    private LigneOCR ligneOCR;
+
+    @Before
+    public void setUp() {
+
+        // given
+        ligneOCR = new LigneOCR();
+    }
+
     @Test
     public void test_j_obtiens_123412344_lorsque_j_ai_123412344() {
-        // given
-        LigneOCR ligneOCR = new LigneOCR();
-
 
         // when
         String code = ligneOCR.lire(
@@ -28,8 +35,6 @@ public class LigneOCRTest {
 
     @Test
     public void test_j_obtiens_000000000_lorsque_j_ai_00000000() {
-        // given
-        LigneOCR ligneOCR = new LigneOCR();
 
         // when
         String code = ligneOCR.lire(

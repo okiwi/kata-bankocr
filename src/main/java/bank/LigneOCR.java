@@ -1,7 +1,7 @@
 package bank;
 
 /**
- * Created by eptwalabha on 09/11/15.
+ * Created by coding-dojo-coolworking on 09/11/15.
  */
 public class LigneOCR {
     private CaractereOCR caractereOcr;
